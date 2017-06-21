@@ -14,7 +14,9 @@
     "build": "yarn build:clean && yarn build:compile && yarn build:flow",
     "build:clean": "rm -f dist/*.js && rm -f dist/*.flow",
     "build:compile": "babel lib/ --out-dir dist/",
-    "build:flow": "flow-copy-source lib/ dist/"
+    "build:flow": "flow-copy-source lib/ dist/",
+    "preparepublish": "yarn test",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
