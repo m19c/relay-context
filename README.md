@@ -44,7 +44,7 @@ export default ({ slug }) => <QueryRenderer
     }
   `}
   render={({ error, props }) => {
-  // TODO: render stuff
+    // TODO: render stuff
   }}
 />;
 ```
