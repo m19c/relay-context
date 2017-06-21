@@ -1,0 +1,15 @@
+{
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "ecmaVersion": 2017,
+  "sourceType": "module",
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "no-unused-vars": 1,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "react/prefer-stateless-function": 1,
+    "react/jsx-filename-extension": 0
+  }
+}
