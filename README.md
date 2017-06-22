@@ -1,5 +1,16 @@
 # relay-context
 
+## Install
+### yarn
+```
+yarn add relay-context
+```
+
+### npm
+```
+npm i --save relay-context
+```
+
 ## Example
 ### Main entry point
 ```javascript
