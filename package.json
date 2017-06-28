@@ -1,6 +1,6 @@
 {
   "name": "relay-context",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "dist/",
   "repository": "git@github.com:MrBoolean/relay-context.git",
   "author": "MrBoolean <marcandrebinder@gmail.com>",
