@@ -5,6 +5,9 @@
   "plugins": [
     "flowtype"
   ],
+  "env": {
+    "jest": true
+  },
   "rules": {
     "no-unused-vars": 1,
     "import/no-unresolved": 0,
