@@ -5,11 +5,18 @@
   "plugins": [
     "flowtype"
   ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "jest": true
+  },
   "rules": {
     "no-unused-vars": 1,
     "import/no-unresolved": 0,
     "import/extensions": 0,
     "react/prefer-stateless-function": 1,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": 0
   }
 }

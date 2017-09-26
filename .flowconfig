@@ -1,6 +1,7 @@
 [include]
 
 [ignore]
+.*/node_modules/kefir/.*
 
 [libs]
 
