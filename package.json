@@ -1,60 +1,60 @@
 {
-	"name": "relay-context",
-	"version": "1.0.0",
-	"main": "dist/",
-	"repository": "git@github.com:MrBoolean/relay-context.git",
-	"author": "MrBoolean <marcandrebinder@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"jest": "jest --coverage",
-		"jest:watch": "jest --watch",
-		"lint": "eslint lib/",
-		"flow": "flow",
-		"test": "yarn jest && yarn lint",
-		"build": "yarn build:clean && yarn build:compile && yarn build:flow",
-		"build:clean": "rm -f dist/*.js && rm -f dist/*.flow",
-		"build:compile": "babel lib/ --out-dir dist/",
-		"build:flow": "flow-copy-source lib/ dist/",
-		"preparepublish": "yarn test",
-		"prepublish": "yarn build"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.24.1",
-		"babel-eslint": "^7.2.3",
-		"babel-jest": "^20.0.3",
-		"babel-plugin-transform-flow-strip-types": "^6.22.0",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-react": "^6.24.1",
-		"babel-preset-stage-0": "^6.24.1",
-		"enzyme": "^2.8.2",
-		"eslint": "^3.19.0",
-		"eslint-config-airbnb": "^15.0.1",
-		"eslint-plugin-flowtype": "^2.34.0",
-		"eslint-plugin-import": "^2.2.0",
-		"eslint-plugin-jsx-a11y": "^5.0.1",
-		"eslint-plugin-react": "^7.0.1",
-		"flow-bin": "^0.55.0",
-		"flow-copy-source": "^1.1.0",
-		"jest": "^20.0.4",
-		"prop-types": "^15.5.10",
-		"react": "^15.6.1",
-		"react-addons-test-utils": "^15.6.0",
-		"react-dom": "^15.6.1",
-		"react-relay": "^1.0.0"
-	},
-	"peerDependencies": {
-		"prop-types": "^15.5.10",
-		"react": "^15.6.1",
-		"react-relay": "^1.0.0"
-	},
-	"jest": {
-		"collectCoverageFrom": ["lib/**/*.js"],
-		"testMatch": ["<rootDir>/lib/**/?(*.)test.js"],
-		"testPathIgnorePatterns": ["<rootDir>[/\\\\]node_modules[/\\\\]"],
-		"transform": {
-			"^.+\\.js$": "<rootDir>/node_modules/babel-jest"
-		},
-		"transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
-		"coverageDirectory": "<rootDir>/coverage"
-	}
+  "name": "relay-context",
+  "version": "1.0.1",
+  "main": "dist/",
+  "repository": "git@github.com:MrBoolean/relay-context.git",
+  "author": "MrBoolean <marcandrebinder@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "jest": "jest --coverage",
+    "jest:watch": "jest --watch",
+    "lint": "eslint lib/",
+    "flow": "flow",
+    "test": "yarn jest && yarn lint",
+    "build": "yarn build:clean && yarn build:compile && yarn build:flow",
+    "build:clean": "rm -f dist/*.js && rm -f dist/*.flow",
+    "build:compile": "babel lib/ --out-dir dist/",
+    "build:flow": "flow-copy-source lib/ dist/",
+    "preparepublish": "yarn test",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "flow-bin": "^0.55.0",
+    "flow-copy-source": "^1.1.0",
+    "jest": "^20.0.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-relay": "^1.0.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-relay": "^1.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": ["lib/**/*.js"],
+    "testMatch": ["<rootDir>/lib/**/?(*.)test.js"],
+    "testPathIgnorePatterns": ["<rootDir>[/\\\\]node_modules[/\\\\]"],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
+    "coverageDirectory": "<rootDir>/coverage"
+  }
 }
