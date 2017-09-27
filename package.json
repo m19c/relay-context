@@ -1,6 +1,6 @@
 {
   "name": "relay-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/",
   "repository": "git@github.com:MrBoolean/relay-context.git",
   "author": "MrBoolean <marcandrebinder@gmail.com>",
@@ -43,9 +43,9 @@
     "react-relay": "^1.0.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-relay": "^1.0.0"
+    "prop-types": ">=15.5.10",
+    "react": ">=15.6.1",
+    "react-relay": ">=1.0.0"
   },
   "jest": {
     "collectCoverageFrom": ["lib/**/*.js"],
